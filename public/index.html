@@ -16,28 +16,14 @@
         </style>
     </head>
     <body>
-        <div class="bar"></div>
         
-        <div style="display: inline-block;
-            width: 20px;
-            height: 75px;
-            background-color: teal;">
-        </div>
         <script type="text/javascript">
         var dataset = [ 5, 10, 15, 20, 25 ];
         d3.select("body").selectAll("p")
         .data(dataset)
         .enter()
         .append("div")
-        .text(function(d) {
-        return "Cuantas ando minales puedes hacer?" + d; })
-        .style("color", function(d) {
-        if (d % 2 == 0 ) {
-        return "red";
-        } else {
-        return "black";
-        }
-        });
+        .attr("class", "bar");
         </script>
     </body>
 </html>
