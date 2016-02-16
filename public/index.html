@@ -13,8 +13,24 @@
         var body = d3.select("body");
         var p = body.append("p");
         p.text("Hola D3 :) Que gusto saludarte, espero nos llevemos muy bien!");
-        var dataset = [5, 10, 15, 20, 25];
+
+        var dataset = [ 5, 10, 15, 20, 25 ];
+
+        d3.select("body").selectAll("p")
+            .data(dataset)
+            .enter()
+            .append("p")
+            .text(function(d) {
+              return "Cuantas andominales puedes hacer?" + d; }) 
+            .style("color", function(d) {
+                if (d % 2 == 0 ) { 
+                    return "red";
+                } else {
+                    return "black";
+                }
+            }); 
 
         </script>
+
     </body>
 </html>
