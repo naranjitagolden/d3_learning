@@ -2,28 +2,40 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta content="utf-8" http-equiv="encoding">
+<meta content="utf-8" http-equiv="encoding">
         <title>Hola D3 ;)</title>
         <script type="text/javascript" src="/d3/d3.min.js"></script>
-        <style>
-        
-        div.bar {
-        display: inline-block;
-        width: 20px;
-        height: 75px;   /* We'll override height later */
-        background-color: teal;
-        }
-        </style>
+    <style>
+    
+    div.bar {
+    display: inline-block;
+    width: 20px;
+    height: 75px;   /* We'll override height later */
+    background-color: teal;
+}
+    </style>
+
     </head>
+
     <body>
+
         
         <script type="text/javascript">
+
         var dataset = [ 5, 10, 15, 20, 25 ];
+
         d3.select("body").selectAll("p")
-        .data(dataset)
-        .enter()
-        .append("div")
-        .attr("class", "bar");
+            .data(dataset)
+            .enter()
+            .append("div")
+            .attr("class", "bar")
+            .style("height" , function(d) {
+                return d + "px";
+            });
+
+
+
         </script>
+
     </body>
 </html>
