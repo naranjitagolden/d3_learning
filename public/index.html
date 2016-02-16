@@ -5,8 +5,20 @@
 <meta content="utf-8" http-equiv="encoding">
         <title>Hola D3 ;)</title>
         <script type="text/javascript" src="/d3/d3.min.js"></script>
+    <style>
+    
+    div.bar {
+    display: inline-block;
+    width: 20px;
+    height: 75px;   /* We'll override height later */
+    background-color: teal;
+}
+    </style>
+
     </head>
+
     <body>
+
         
         <script type="text/javascript">
 
@@ -21,7 +33,7 @@
             .enter()
             .append("p")
             .text(function(d) {
-              return "Cuantas andominales puedes hacer?" + d; }) 
+              return "Cuantas ando minales puedes hacer?" + d; }) 
             .style("color", function(d) {
                 if (d % 2 == 0 ) { 
                     return "red";
@@ -31,6 +43,11 @@
             }); 
 
         </script>
+
+        <div style="display: inline-block;
+            width: 20px;
+            height: 75px;
+            background-color: teal;"></div>
 
     </body>
 </html>
