@@ -1,0 +1,172 @@
+	var enfoque = [{
+		"id": 1,
+		"name": "Tecnología"
+
+		}, {
+		"id": 2,
+		"name": "Neo Ruralismo"
+
+		},{
+		"id": 3,
+		"name": "Humanismo"
+
+		},{
+		"id": 4,
+		"name": "Creación Audiovisual"
+
+		},{
+		"id": 5,
+		"name": "Identidad"
+
+		},];
+
+	var temas = [{
+		"id": 1,
+		"name": "Tecnología y Género ",
+		"enfoque_id": [1, 3]
+
+		},]
+
+	var herramientas = [{
+		"id": 1,
+		"name": "ilustrator",
+		"tag_id":  
+
+		}, {
+		"id": 2,
+		"name": "photoshop",
+		"tag_id": 
+
+		},{
+		"id": 3,
+		"name": "SketUp"
+
+		},{
+		"id": 4,
+		"name": "Font-Forge"
+
+		},{
+		"id": 5,
+		"name": "Bocetación"
+
+		},{
+		"id": 6,
+		"name": "Pinterest"
+
+		},{
+		"id": 7,
+		"name": "RealTimeBoard"
+
+		},{
+		"id": 8,
+		"name": "Wunderlist"
+
+		},{
+		"id": 9,
+		"name": "Trello"
+
+		},{
+		"id": 10,
+		"name": "Toggle"
+
+		},{
+		"id": 11,
+		"name": "Github"
+
+		},
+		{
+		"id": 12,
+		"name": "Gmail"
+
+		},{
+		"id": 13,
+		"name": "Hangout"
+
+		},{
+		"id": 14,
+		"name": "Sublime"
+
+		},{
+		"id": 15,
+		"name": "Iterm"
+
+		},{
+		"id": 16,
+		"name": "Ilustración"
+
+		},{
+		"id": 17,
+		"name": "Dropbox"
+
+		},{
+		"id": 18,
+		"name": "Trello"
+
+		},{
+		"id": 19,
+		"name": "BussinesModelCanvas"
+
+		},{
+		"id": 20,
+		"name": "Investigación_acción_participación"
+
+		},{
+		"id": 21,
+		"name": "Investigación cuantitativa"
+
+		},{
+		"id": 22,
+		"name": "Etnografía"
+
+		},{
+		"id": 23,
+		"name": "Markdown"
+
+		},{
+		"id": 24,
+		"name": "HTML"
+
+		},{
+		"id": 25,
+		"name": "CSS"
+
+		},];
+
+		var tags = [{
+	    "id": 1,
+	    "name": "computer_programing"
+	},{
+	    "id": 2,
+	    "name": "desing"
+	}, {
+	    "id": 3,
+	    "name": "antropology"
+	},{
+	    "id": 4,
+	    "name": "marketing"
+	},{
+	    "id": 5,
+	    "name": "adaptability"
+	},{
+	    "id": 5,
+	    "name": "comunication"
+	},{
+	    "id": 5,
+	    "name": "remote_work"
+	},{
+	    "id": 6,
+	    "name": "mobil"
+	},{
+	    "id": 5,
+	    "name": "remote_work"
+	},{
+	    "id": 5,
+	    "name": "productivity"
+	},{
+	    "id": 5,
+	    "name": "community"
+	},
+	]
+
+
+
