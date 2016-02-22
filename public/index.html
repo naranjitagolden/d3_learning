@@ -9,51 +9,39 @@
     <body>
         
         <script type="text/javascript">
-        /*var dataset = [];
-        for (var i = 0; i < 25; i++) {
-        var newNumber = Math.floor(Math.random() * 30);
-        dataset.push(newNumber);
-        }*/
-        
+
+        var dataset = [ 5, 10, 13, 19, 21, 25, 22, 18, 15, 13,
+                11, 12, 15, 20, 18, 17, 16, 18, 23, 25 ];
+        //work space Width and height
         var w = 500;
-        var h = 50;
-        var s = 5;
+        var h = 100;
+        var barPadding = 1;
 
-
+        //Creando SVG element
         var svg = d3.select("body")
                     .append("svg")
                     .attr("width", w)
-                    .attr("height", h)
-                    .attr("stroke-width", s)
+                    .attr("height", h);
+
+        svg.selectAll("rect")
+            .data(dataset)
+            .enter()
+            .append("rect")
+            .attr("x", function(d, i){
+                return i * (w / dataset.length); 
+            })
+            .attr("y", function(d) {
+                return h - (d * 4); //height minus data values
+            })
+            .attr("width", w / dataset.length - barPadding)
+            .attr("height", function(d){
+                return d * 4;
+            });
 
 
 
-        var dataset = [5, 10, 15, 20, 25];
-
-        var circles = svg.selectAll("circle")
-        .data(dataset)
-        .enter()
-        .append("circle")
-        .attr("fill", "yellow")
-        .attr("stroke", "orange");
-
-        circles.attr("cx", function(d, i) {
-            return (i * 50) + 25;
-        })
-        .attr("cy" , h/2)
-        .attr("r", function(d) {
-            return d/2;
-        });
 
 
-        /*.data(dataset)
-        .enter()
-        .append("div")
-        .attr("class", "bar")
-        .style("height" , function(d) {
-        var barHeight = d * 5;
-        return barHeight + "px";
-        });*/
         </script>
     </body>
 </html>
