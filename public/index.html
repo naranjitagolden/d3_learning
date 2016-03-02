@@ -43,10 +43,10 @@
             return d;
            })
            .attr("x", function(d, i) {
-            return i * (w/ dataset.length);
+            return i * (w/ dataset.length) + 5;
            })
            .attr("y", function(d) {
-                return h -(d * 4);
+                return h -(d * 4) + 15;
            });
 
 
