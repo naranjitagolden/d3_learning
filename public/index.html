@@ -5,6 +5,20 @@
         <meta content="utf-8" http-equiv="encoding">
         <title>Hola D3 ;)</title>
         <script type="text/javascript" src="/d3/d3.min.js"></script>
+        <style>
+        .axis path,
+        .axis line {
+            fill: none;
+            stroke: black;
+            shape-rendering: crispEdges;
+        } 
+
+        .axis text {
+            font-family: sans-serif;
+            font-size: 11px;
+        }   
+
+        </style>
     </head>
     <body>
         
@@ -89,7 +103,9 @@
                             //Create X axis
 
                             svg.append("g")
+                               .attr("class", "axis")
                                .call(xAxis);
+
 
 
 
